@@ -1,0 +1,52 @@
+body{
+    font-family:"yahei Microsoft";
+}
+.top{
+    width:100%;
+    border:0.2em solid black;
+}
+.top{
+    height:190px;
+    background:rgba(255, 255, 255, 0.56);
+}
+.bottom{
+    height:20%;
+    width:100%;
+}
+.textarea{
+    width:100%;
+    height:50px;
+    font-size:2em;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+.top p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.lost {
+    text-align:center;
+    height: 240px;
+    border: 3px dashed #F16e50;
+    box-shadow:2px 2px 15px red;
+    background:rgba(0, 0, 0, 0.33);
+}
+.mask{
+    background: url("/images/lost.jpg");
+}
+.lost input{
+    margin-top:100px;
+}
+#mylegend{
+    overflow: hidden;
+}
+#upload{
+    background-color:rgba(92, 184, 92, 0.5) !important;
+}
+.chat{
+    background: url("/images/chat.jpg");
+    background-size: cover;
+}

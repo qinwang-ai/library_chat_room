@@ -1,0 +1,182 @@
+2014/11/11 07:57:06 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii_src/protected/views/layouts/main.php:51)
+Stack trace:
+#0 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#5 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#6 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii_src/protected/views/layouts/column1.php(6): SiteController->endContent()
+#7 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CBaseController.php(126): require()
+#8 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(784): SiteController->renderFile()
+#10 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii_src/protected/controllers/SiteController.php(32): SiteController->render()
+#11 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(286): SiteController->runAction()
+#14 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii_src/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii_src/protected/views/layouts/main.php (51)
+in /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii_src/protected/views/layouts/column1.php (6)
+in /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii_src/protected/controllers/SiteController.php (32)
+2014/11/11 17:27:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#1 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii_src/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/?r=gii
+---
+2014/11/12 18:19:06 [error] [php] Use of undefined constant htmlOptions - assumed 'htmlOptions' (/Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii_src/protected/views/user/create.php:60)
+Stack trace:
+#0 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(869): UserController->renderFile()
+#1 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(782): UserController->renderPartial()
+#2 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii_src/protected/controllers/UserController.php(79): UserController->render()
+#3 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/actions/CInlineAction.php(49): UserController->actionCreate()
+#4 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/filters/CFilterChain.php(133): UserController->runAction()
+#6 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/filters/CInlineFilter.php(58): UserController->filterAccessControl()
+#9 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(265): UserController->runActionWithFilters()
+#12 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CWebApplication.php(282): UserController->run()
+#13 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii_src/index.php(14): CWebApplication->run()
+REQUEST_URI=/?r=user/create
+in /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii_src/protected/views/user/create.php (60)
+in /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii_src/protected/controllers/UserController.php (79)
+in /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii_src/index.php (14)
+2014/11/12 19:32:30 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php:336
+Stack trace:
+#0 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#9 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#10 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii_src/index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=user/admin
+---
+2014/11/12 19:32:38 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php:336
+Stack trace:
+#0 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#9 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#10 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii_src/index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=user/admin
+---
+2014/11/12 19:32:40 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php:336
+Stack trace:
+#0 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#9 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#10 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii_src/index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=user/admin
+---
+2014/11/12 19:48:08 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php:336
+Stack trace:
+#0 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#9 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#10 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii_src/index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=user/admin
+HTTP_REFERER=http://sysuct.com/index.php?r=site/login
+---
+2014/11/12 19:52:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#3 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii_src/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user/login
+---
+2014/11/12 22:50:11 [error] [php] Array to string conversion (/Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/helpers/CHtml.php:2019)
+Stack trace:
+#0 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CBaseController.php(126): require()
+#1 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CBaseController.php(95): UserController->renderInternal()
+#2 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(869): UserController->renderFile()
+#3 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(782): UserController->renderPartial()
+#4 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii_src/protected/controllers/UserController.php(85): UserController->render()
+#5 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/actions/CInlineAction.php(49): UserController->actionCreate()
+#6 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/filters/CFilterChain.php(133): UserController->runAction()
+#8 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#10 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/filters/CInlineFilter.php(58): UserController->filterAccessControl()
+#11 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(265): UserController->runActionWithFilters()
+#14 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CWebApplication.php(282): UserController->run()
+#15 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii_src/index.php(14): CWebApplication->run()
+REQUEST_URI=/?r=user/create
+in /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii_src/protected/views/user/create.php (84)
+in /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii_src/protected/controllers/UserController.php (85)
+in /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii_src/index.php (14)
+2014/11/12 22:51:22 [error] [php] Array to string conversion (/Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/helpers/CHtml.php:2019)
+Stack trace:
+#0 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CBaseController.php(126): require()
+#1 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CBaseController.php(95): UserController->renderInternal()
+#2 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(869): UserController->renderFile()
+#3 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(782): UserController->renderPartial()
+#4 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii_src/protected/controllers/UserController.php(85): UserController->render()
+#5 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/actions/CInlineAction.php(49): UserController->actionCreate()
+#6 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/filters/CFilterChain.php(133): UserController->runAction()
+#8 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#10 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/filters/CInlineFilter.php(58): UserController->filterAccessControl()
+#11 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CController.php(265): UserController->runActionWithFilters()
+#14 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CWebApplication.php(282): UserController->run()
+#15 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii_src/index.php(14): CWebApplication->run()
+REQUEST_URI=/?r=user/create
+in /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii_src/protected/views/user/create.php (84)
+in /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii_src/protected/controllers/UserController.php (85)
+in /Users/tsunami/Sites/Scientist2031/web/sysuct/sign/yii_src/index.php (14)

@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<script src="bootstrap/js/jquery-1.11.1.min.js"></script>
+		<script src="bootstrap/js/bootstrap.js"></script>
+		<link href="bootstrap/css/bootstrap.css" rel = 'stylesheet'>
+		<link href="bootstrap/site.css" rel = 'stylesheet'>
+		<link href="bootstrap/easydropdown.metro.css" rel = 'stylesheet'>
+		<script src="bootstrap/jquery.easydropdown.js"></script>
+		<script src = "bootstrap/lufylegend-1.8.7.js"></script>
+		<link href = "css/index.css" rel = "stylesheet">
+		<script src = "js/index.js"></script>
+	</head>
+	<body>
+		<div class = "container">
+		<div class = "row">
+			<div class = "col-xs-4">
+					<h1>
+						空座信息
+					</h1>
+
+				<div class="panel panel-default">
+					<div class="panel-heading">场馆空座状态查询系统</div>
+					<div class="panel-body">
+						<select name="cate" id="dep_id" class = 'dropdown'>
+						   <option value="1">图书馆</option>
+							<option value="2">实验室</option>
+						</select>
+
+						<div class="btn-group">
+							<button type="button" class="btn btn-default">查询</button>
+						</div>
+						 <table class="table table-hover">
+						     <tr>
+								<td>座位总数:</td>
+								<td>53</td>
+							 </tr>
+							 <tr>
+								<td>剩余座位:</td>
+								<td>53</td>
+							 </tr>
+						 </table>
+					</div>
+				</div>
+			</div>
+
+			<div class = "col-xs-8">
+				<div id = "mylegend">
+				</div>
+			</div>
+		</div>
+		<div class = "row">
+			<div class = "col-xs-4">
+					<h1>
+						真人图书馆
+					</h1>
+					<div class ="chat">
+						<div class = "top">
+						</div>
+
+						<div class = "bottom">
+							<textarea name="Name" class = "textarea"></textarea>
+						</div>
+					</div>
+			</div>
+			<div class = "col-xs-8">
+					<h1>
+						失物照领
+					</h1>
+					<input type="file" id = "file_pic" style = "display:none">
+					<div class = "mask">
+						<div class = "lost">
+								<input type="button" class="btn btn-success btn-lg" id = "upload" value = "上传照片">
+						</div>
+					</div>
+			</div>
+
+		</div>
+		</div>
+		<script src="bootstrap/site.js"></script>
+		<script>
+			init(10, "mylegend", 1000,400,main);
+			var t = 0;
+			function main(){
+				$("#mylegend_canvas").parent().css("position","relative");
+				backlayer = new LSprite();
+				addChild(backlayer);
+				backlayer.graphics.drawRect( 1, "#cc3300", [0,0,800,400]);
+				for(i=1;i<8;i++)
+				  for(j = 1;j<=5;j++)
+				{
+					backlayer.graphics.drawRect( 2, "green", [20+i*80,20,50,50]);
+					backlayer.graphics.drawRect( 2, "green", [20,20+80*j,50,50]);
+					backlayer.graphics.drawRect( 2, "green", [20 +i*80,20+80*j,50,50]);
+				}
+				backlayer.graphics.drawRect( 2, "red", [180,20+80*3,50,50]);
+				backlayer.graphics.drawRect( 2, "red", [20 +1*80,20+80*3,50,50]);
+				backlayer.graphics.drawRect( 2, "red", [20 +3*80,20+80*4,50,50]);
+				backlayer.graphics.drawRect( 2, "red", [20 +4*80,20+80*4,50,50]);
+				backlayer.graphics.drawRect( 2, "red", [20 +2*80,20+80*2,50,50]);
+			}
+		</script>
+	</body>
+</html>
